@@ -1,0 +1,12 @@
+[
+	{
+		"trigger": "importantJobs.trigger1",		
+		"job": "demoJob.exception",
+		"cron": "0/30 * * * * ?",
+		"comment": "Throws an exception and recovers",
+		"jobData": {
+			"maxRetries" : "3",
+			"retryDelay" : "5"
+		}
+	}
+]

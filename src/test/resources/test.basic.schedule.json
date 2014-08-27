@@ -1,0 +1,7 @@
+[
+	{
+		"job": "demoJob.hello",
+		"cron": "0/2 * * * * ?",
+		"comment": "Running hello world every 2 seconds"
+	}
+]

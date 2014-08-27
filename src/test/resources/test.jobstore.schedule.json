@@ -1,0 +1,23 @@
+[
+	{
+		"trigger": "misfireJobs.doNothing",		
+		"job": "demoJob.jobstore",
+		"cron": "0/10 * * * * ?",
+		"comment": "DO_NOTHING misfire instruction - none of the missed trigger times will fire.",
+		"onMisfire": "DO_NOTHING" 
+	},
+	{
+		"trigger": "misfireJobs.fireAndProceed",		
+		"job": "demoJob.jobstore",
+		"cron": "1/10 * * * * ?",
+		"comment": "FIRE_AND_PROCEED misfire instruction - only the latest missed trigger time will fire.",
+	 	"onMisfire": "FIRE_AND_PROCEED" 
+	},
+	{
+		"trigger": "misfireJobs.ignoreMisfires",		
+		"job": "demoJob.jobstore",
+		"cron": "2/10 * * * * ?",
+		"comment": "IGNORE_MISFIRES misfire instruction - all missed trigger times will fire.",
+		"onMisfire": "IGNORE_MISFIRES" 
+	}
+]
